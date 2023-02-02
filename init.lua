@@ -1,0 +1,21 @@
+--vv core config
+require('base')
+require('keymaps')
+require('plugins')
+require('text')
+require('style')
+require('other')
+
+-- plug config
+require('p-bookmark')
+require('p-cmp')
+require('p-colors')
+require('p-lspconfig')
+require('p-lspkind')
+require('p-lualine')
+require('p-mason')
+require('p-null')
+require('p-template-string')
+require('p-telescope')
+require('p-tree')
+require('p-treesitter')
