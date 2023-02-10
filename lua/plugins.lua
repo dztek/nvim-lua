@@ -64,4 +64,11 @@ return require('packer').startup(function(use)
   -- use 'windwp/nvim-ts-autotag'
   use 'p00f/nvim-ts-rainbow'
   use 'axelvc/template-string.nvim'
+
+  use {
+    "iamcco/markdown-preview.nvim",
+    run = function()
+      vim.fn["mkdp#util#install"]()
+    end,
+  }
 end)

@@ -4,10 +4,12 @@ vim.g.loaded_netrwPlugin = 1
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
   actions = {
-    open_file = { quit_on_open = true }
+    open_file = {
+      --quit_on_open = true
+    }
   },
   update_focused_file = {
-    enable = true,
+    enable = false,
     update_cwd = true
   },
   filters = {
@@ -36,3 +38,4 @@ require("nvim-tree").setup({
 })
 
 vim.keymap.set('n', '<c-h>', '<cmd>NvimTreeToggle<cr>')
+vim.keymap.set('n', '<c-j>', '<cmd>NvimTreeToggle<cr>')
