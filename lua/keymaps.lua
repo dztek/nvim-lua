@@ -7,7 +7,7 @@ k.set('n', 'mn', ':BookmarkNext<cr>')
 k.set('n', 'mp', ':BookmarkPrev<cr>')
 
 -- quitters
-k.set('n', '<leader>q', ':qa<cr>')
+k.set('n', '<leader>q', ':qall<cr>')
 k.set('n', '<leader>w', ':q<cr>')
 k.set('n', '<leader>nq', ':q!<cr>')
 
