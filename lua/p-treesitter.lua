@@ -1,5 +1,5 @@
 require 'nvim-treesitter.configs'.setup {
-  ensure_installed = { "lua", "help", "javascript", "json", "graphql" },
+  ensure_installed = { "svelte", "lua", "help", "javascript", "json", "graphql" },
 
   sync_install = false,
   auto_install = true,

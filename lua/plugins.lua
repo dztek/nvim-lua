@@ -3,8 +3,11 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'MattesGroeger/vim-bookmarks'
+  use 'tpope/vim-commentary'
+  use 'tmux-plugins/tpm' 
+  use 'tmux-plugins/tmux-sensible' 
   use 'jose-elias-alvarez/typescript.nvim'
-  use 'jose-elias-alvarez/null-ls.nvim'
+  -- use 'jose-elias-alvarez/null-ls.nvim'
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'

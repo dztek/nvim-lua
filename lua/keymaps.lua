@@ -2,6 +2,12 @@ _G.v = vim
 _G.k = v.keymap
 v.g.leader = '<space>'
 
+-- NvimTreeToggle
+k.set('n', '<C-b>j', '<cmd>NvimTreeToggle<cr>')
+
+-- comment
+k.set('n', '<leader>c', 'gcc<cr>')
+
 -- bookmarks
 k.set('n', 'mn', ':BookmarkNext<cr>')
 k.set('n', 'mp', ':BookmarkPrev<cr>')
@@ -12,14 +18,14 @@ k.set('n', '<leader>w', ':q<cr>')
 k.set('n', '<leader>nq', ':q!<cr>')
 
 -- packer
-k.set('n', '<leader>00', ':so<Return>:PackerSync<Return>')
-k.set('n', '<leader>99', ':so<Return>:PackerInstall<Return>')
+k.set('n', '<leader>99', ':so<Return>:PackerSync<Return>')
+k.set('n', '<leader>00', ':so<Return>:PackerInstall<Return>')
 
 -- savers
 -- save while in insert mode then switch to normal
 k.set('i', '<C-s>', '<C-c>:w<cr>')
 k.set('i', '<C-;>', '<C-c>:w<cr>')
-k.set('n', '<C-;>', '<C-c>:w<cr>')
+-- k.set('n', '<C-;>', '<C-c>:w<cr>')
 
 -- save and quit
 k.set('i', '<C-w>', '<C-c>:wqall<cr>')
@@ -54,4 +60,4 @@ _G.SetTheme = function(name)
   -- save to config file
 end
 
-k.set('n', '<C-l>', SetTheme)
+-- k.set('n', '<C-l>', SetTheme)

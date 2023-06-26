@@ -9,12 +9,12 @@ require('base')
 require('colors')
 require('keymaps')
 require('plugins')
--- require('text')
--- require('style')
+require('text')
+require('style')
 require('other')
 
 -- plug config
-require('p-bookmark')
+-- require('p-bookmark')
 require('p-cmp')
 require('p-lspconfig')
 require('p-lspkind')
@@ -27,4 +27,4 @@ require('p-tree')
 require('p-treesitter')
 
 -- Set the Theme on RUN
-SetTheme(theme)
+SetTheme(DEFAULT_THEME)
